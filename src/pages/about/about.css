@@ -1,0 +1,36 @@
+.about__section-image{
+    border-radius: 50%;
+    /* height: 70%; */
+    overflow: hidden;
+    transform: skew(15deg);
+    transition: var(--transition);
+}
+
+.about__section-image:nth-child(2){
+    transform: skew(-15deg);
+}
+
+.about__section-image:hover{
+    transform: skewX(0);
+}
+
+.about__section-content h1{
+    margin-bottom: 0.7rem;
+}
+
+.about__section-content p{
+    margin-bottom: 0.4rem;
+    font-size: small;
+}
+
+.about__story-container, .about__mission-container{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+}
+
+.about__vision-container{
+    grid-template-columns: 50% 40%;
+    gap: 10%;
+    display: grid;
+}
