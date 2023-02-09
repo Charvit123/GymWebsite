@@ -1,11 +1,9 @@
-const Card = ({className,children}) => {
+function Card({ className, children }) {
   return (
     <article className={`card ${className}`}>
-{children}
+      {children}
     </article>
-  )
+  );
 }
 
-
-
-export default Card
+export default Card;
