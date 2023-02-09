@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix"
+    "lint": "eslint --ext .js --ignore-path .gitignore . --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -40,11 +40,14 @@
   },
   "devDependencies": {
     "eslint": "^8.33.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^1.19.1",
     "prettier-airbnb-config": "^1.0.0"
   },
