@@ -22,12 +22,12 @@ function Navbar() {
                     <NavLink to={path} className={({ isActive }) => (isActive ? 'active-nav' : '')} onClick={() => setIsNavShowing((prev) => !prev)}>{name}</NavLink>
                   </li>
                 ))
-            }
+          }
         </ul>
-        <button className="nav__toggle-btn" onClick={() => setIsNavShowing((prev) => !prev)}>
+        <button type="button" className="nav__toggle-btn" onClick={() => setIsNavShowing((prev) => !prev)}>
           {
                     isNavShowing ? <MdOutlineClose /> : <GoThreeBars />
-                }
+          }
         </button>
       </div>
 

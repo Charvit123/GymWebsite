@@ -8,7 +8,7 @@ function FAQ({ question, answer }) {
     <article className="faq" onClick={() => setIsAnswerShowing((prev) => !prev)}>
       <div>
         <h4>{question}</h4>
-        <button className="faq__icon">
+        <button type="button" className="faq__icon">
           {
                 isAnswerShowing ? <AiOutlineMinus /> : <AiOutlinePlus />
             }
